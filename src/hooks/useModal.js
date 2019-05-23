@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function useModal() {
-  const [isOpen, setOpen] = React.useState(false);
+function useModal(initialValue = false) {
+  const [isOpen, setOpen] = React.useState(initialValue);
   const toggleModal = React.useCallback(() => setOpen(!isOpen));
   const isMobile = false;
   function Modal({ children }) {
