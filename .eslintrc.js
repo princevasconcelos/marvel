@@ -16,8 +16,9 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
+  parser: 'babel-eslint',
   plugins: ['react'],
   rules: {
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/jsx-filename-extension': [1, {extensions: ['.js', '.jsx']}],
   },
-};
+}

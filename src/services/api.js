@@ -5,13 +5,17 @@ const defaultQuery = {
 
 const getInitialCharacters = () => {
   const queryString = new URLSearchParams(defaultQuery);
-  return fetch(`${url}?${queryString.toString()}`).then(r => r.json());
+  return fetch(`${url}?${queryString.toString()}`)
+    .then(r => r.json())
+    .then(r => r.data);
 };
 
 const getCharacter = ([filters]) => {
   const newFilters = { ...defaultQuery, ...filters };
   const queryString = new URLSearchParams(newFilters);
-  return fetch(`${url}?${queryString.toString()}`).then(r => r.json());
+  return fetch(`${url}?${queryString.toString()}`)
+    .then(r => r.json())
+    .then(r => r.data);
 };
 
 const api = {
