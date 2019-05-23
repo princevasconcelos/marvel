@@ -58,3 +58,7 @@ function useModal(initialValue = false) {
 }
 
 export default useModal;
+
+// https://dev.to/flexdinesh/react-hooks-test-custom-hooks-with-enzyme-40ib
+// https://github.com/Upmostly/modali/blob/master/src/index.js
+// https://github.com/Upmostly/modali/blob/master/src/modali.css
